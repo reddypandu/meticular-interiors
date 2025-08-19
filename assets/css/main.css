@@ -9537,11 +9537,13 @@ body .ui-tooltip {
   opacity: 1;
   transform: translateY(0px);
   transition: all 2500ms ease;
+  text-align: center;
 }
 .tp-slider-3-wrapper .swiper-slide-active .tp-slider-3-content {
   opacity: 1;
   transform: translateY(0px);
   transition: all 2500ms ease;
+  text-align: center;
 }
 
 .tp-slider-dots {
@@ -12201,6 +12203,25 @@ border: 1px solid var(--tp-common-white);
 .tp-hover-distort-wrapper {
   position: relative;
 }
+.tp-service-2-top-box {
+  flex-direction:column;
+}
+.tp-service-2-top-box .tp-service-2-icon i{
+  background-color: var(--tp-theme-1);
+  color:white;
+  padding:24px;
+  font-size: 40px;
+  width:100px;
+  height:100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.tp-service-2-item:hover .tp-service-2-icon i{
+  background-color: var(--tp-common-white);
+  color: var(--tp-theme-1);
+}
 .tp-hover-distort-wrapper .canvas {
   position: absolute;
   top: 0;
@@ -12210,7 +12231,7 @@ border: 1px solid var(--tp-common-white);
   z-index: 1;
 }
 .tp-hover-distort-img {
-  opacity: 0;
+  /* opacity: 0; */
   object-fit: cover;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {

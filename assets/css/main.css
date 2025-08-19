@@ -5317,7 +5317,7 @@ body .ui-tooltip {
   position: relative;
 }
 .tp-header-menu > nav > ul > li > a {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 1.2px;
   display: inline-block;
@@ -5341,9 +5341,9 @@ body .ui-tooltip {
   position: absolute;
   top: 100%;
   left: 0px;
-  width: 200px;
+  width: 350px;
   z-index: 999;
-  padding: 20px 30px;
+  padding: 20px 0;
   opacity: 0;
   visibility: hidden;
   transition: 0.4s;
@@ -5357,19 +5357,27 @@ body .ui-tooltip {
 }
 .tp-header-menu > nav > ul > li > .submenu > li {
   margin: 0;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   display: block;
+  border-bottom:1px solid rgba(0,0,0,0.5);
 }
 .tp-header-menu > nav > ul > li > .submenu > li > a {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 500;
   letter-spacing: 1.2px;
   padding: 0;
   text-transform: capitalize;
   color: var(--tp-common-black);
   position: relative;
+  padding-inline:10px;
 }
-.tp-header-menu > nav > ul > li > .submenu > li > a::after {
+.tp-header-menu > nav > ul > li > .submenu > li:hover{
+  background-color: var(--tp-theme-1);
+}
+.tp-header-menu > nav > ul > li > .submenu > li:hover > a{
+color: var(--tp-common-white);
+}
+/* .tp-header-menu > nav > ul > li > .submenu > li > a::after {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -5386,7 +5394,7 @@ body .ui-tooltip {
   right: auto;
   left: 0;
   background-color: var(--tp-common-black);
-}
+} */
 .tp-header-menu > nav > ul > li:hover > a::after {
   width: 100%;
   right: auto;

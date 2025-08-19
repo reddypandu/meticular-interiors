@@ -899,6 +899,7 @@ div.demo img {
 }
 .tp-header-area:not(.tp-header-sticky-cloned) .tp-header-logo {
   height:80px;
+  padding:5px;
 }
 .tp-header-area:not(.tp-header-sticky-cloned) .tp-header-logo img{
   height:100%;
@@ -5832,12 +5833,12 @@ color: var(--tp-common-white);
   background-color: var(--tp-theme-1);
 }
 .tp-header-style-5 .tp-header-bar button {
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: var(--tp-theme-1);
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .tp-header-style-5 .tp-header-bar button {
     border-radius: 50%;
-    color: var(--tp-common-white);
+    color: var(--tp-theme-1);
   }
 }
 .tp-header-style-5 .tp-header-icon a.cart-icon span::after {
@@ -6188,7 +6189,7 @@ color: var(--tp-common-white);
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 1.2px;
-  color: var(--tp-common-white);
+  color: var(--tp-theme-1);
   position: relative;
   padding: 7px 0;
   padding-right: 20px;
